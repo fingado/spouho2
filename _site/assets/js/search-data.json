@@ -1,0 +1,128 @@
+{
+  "0": {
+    "id": "0",
+    "title": "1 - einfaches zeichnen",
+    "content": "Achtung: auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. Lerne, wie du dich dagegen schützen kannst.Zeichnen mit der TurtleUnsere Schildkröte Anton kann sich aufgrund von unseren Anweisungen auf der Bildschirmfläche bewegen. Bei jeder Bewegung zeichnet Anton eine Linie. Anton kann sich vorwärts (forward) und rückwärts (backward) bewegen:forward(distanz)backward(distanz)In die Klammern muss ein Parameter eigegeben werden. Ein Parameter ist in diesem Fall eine Zahl, welche die Distanz beschreibt, die Anton gehen soll.Anton kann sich zudem nach rechts (right) oder links (left) bewegen:right(winkel)left(winkel)In die Klammern muss wieder ein Parameter eigegeben werden, dieses Mal aber ein Winkel in Grad (zum Anfangen am besten mit Werten zwischen 0° und 360° experimentieren!).Führe den untenstehenden Code aus und versuche ihn danach zu manipulieren, indem du die Schildkröte dazu bringst, ein Dreieck zu zeichnen. Versuche danach eine Figur zu zeichnen (Dreieck, Viereck, Fünfeck…), bei der sich die Schildkröte nur rückwärts bewegt.  Wichtig ist, dass bei jedem Befehl spezifiziert wird, dass Anton ihn ausführen muss. Vor jeder Anweisung muss also Anton (unser Objekt) stehen, indem der Name von Anton angegeben wird, gefolgt von einem Punkt und dem zu verwendenden Befehl:  Anton.BefehlSchreiben mit der TurtleAnton kann auch schreiben. Mit dem Befehlwrite(&quot;text&quot;)schreibt Anton den in der Klammer angegebenen Text. Dies tut er immer an der Stelle, wo er sich gerade befindet. Führe das untenstehende Beispiel aus und versuche, den von Anton geschriebenen Text zu verändern. Zum Beispiel mit deinem Namen.Die Position der Turtle und bewegen ohne StiftDas Fenster in dem Anton sich bewegt müssen wir uns wie ein Koordinatensystem vorstellen. Für unsere Zwecke ist das Koordinatensystem von Anton begrenzt auf 400x400 Pixel. Wir können uns das so vorstellen, dass Anton in der Mitte des Fensters startet (bei (x = 0 / y = 0)) und 200 Schrite nach links und 200 Schritte nach rechts gehen kann, so dass vom linken Fensterrand bis zum rechten Fensterrand maximal 400 Schritte möglich sind. Der folgende Code-Ausschnitt versucht das darzustellen. Führe den Code aus und versuche das Koordinatensystem zu verstehen.Im Code Ausschnitt von oben sind einige neue Funktionen ersichtlich. Erstens können wir den Stift von Anton entweder anheben, oder ablegen. Anheben (penup()) heisst, dass Anton gar nichts zeichnen soll, auch wenn er sich bewegt. Ablegen (pendown()) heisst, dass Anton etwas zeichnen soll:penup()pendown()Eine weitere Funktion im obenstehenden Code ist goto(). Mit goto() können wir Anton irgendwohin in unserem Koordinatensystem schicken. In die Klammern müssen wir lediglich die Koordinaten eingeben. Mögliche Koordinaten sind -200 bis 200. X und Y Koordinaten müssen mit einem Komma getrennt werden.goto(x,y)Eine weitere Funktion im obenstehenden Code ist speed(). Damit können wir die Geschwindigkeit von Anton beeinflussen. Die Geschwindigkeit kann Werte zwischen 0 und 10 annehmen. Ein Wert von 1 führt dazu, dass Anton sich sehr langsam bewegt, ein Wert von 10 macht Anton sehr schnell. Achtung: ein Wert von 0 bedeutet, dass Antons Animation ausser Kraft gesetzt wird. Die Turtle bewegt sich dadurch (unter Umständen) noch schneller als mit 10.speed(geschwindigkeit)Weiterhin wurde im Code die Farbe von Anton gewechselt. Die Farbe beeinflusst sowohl die Linien, die Anton zeichnet, als auch den Text, den Anton schreibt. Die Funktion dafür ist color() und als Argument für die Funktion muss eine Farbe eingesetzt werden. Alle gängigen Farben gehen dafür, sie müssen aber auf Englisch und in Anführungszeichen angegeben werden:color(&quot;farbe&quot;)   # zum Beispiel &quot;green&quot;, &quot;blue&quot; oder &quot;red&quot;Die letzte verwendetet Funktion war hideturtle(). Diese Funktion versteckt Anton.hideturtle()Übersicht aller bisher verwendeten FunktionenUm ein Turtle-Programm in Python starten zu können, müssen wir immer folgenden Code-Block ausführen (wir werden ihn später noch verstehen lernen):import turtle             # Turtle Bibliothek von Python importierenwindow = turtle.Screen()  # Fenster initialisieren (nötig)Anton = turtle.Turtle()   # ein neues Objekt generieren: eine Turtle namens AntonAnton.shape(&quot;turtle&quot;)     # Anton soll das Aussehen einer Schildkröte haben.Wichtig ist zudem, vor jede Funktion immer unser Objekt zu platzieren. Unser Objekt heisst Anton. Wir schreiben also immer Anton.funktion(argument) um eine Funktion auszuführen.Bisher verwendete Funktionen (mögliche Argumente in Klammern):forward(distance)   # Distanz als Zahlbackward(distance)  # Distanz als Zahlright(arc)          # arc = Winkel als Zahkleft(arc)           # arc = Winkel als Zahlwrite(&quot;text&quot;)       # Text in Anführungszeichen!penup()             # kein Argument!pendown()           # kein Argument!goto(x,y)           # x- und y-Koordinaten als Zahlen, getrennt mit Komma.speed(value)        # Wert zwischen 0 und 10color(&quot;farbe&quot;)   # zum Beispiel &quot;green&quot;, &quot;blue&quot; oder &quot;red&quot;hideturtle()        # kein Argument!ÜbungenÜbung 1Übung 2Übung 3Übung 4",
+    "url": "http://localhost:4000/spottundhohn/docs/50%20python-mit-turtle/1_zeichen/",
+    "relUrl": "/spottundhohn/docs/50%20python-mit-turtle/1_zeichen/"
+  },
+  "1": {
+    "id": "1",
+    "title": "Einfaches zeichnen",
+    "content": "Achtung: auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. Lerne, wie du dich dagegen schützen kannst.Zeichnen mit der TurtleUnsere Schildkröte Anton kann sich aufgrund von unseren Anweisungen auf der Bildschirmfläche bewegen. Bei jeder Bewegung zeichnet Anton eine Linie. Anton kann sich vorwärts (forward) und rückwärts (backward) bewegen:forward(distanz)backward(distanz)In die Klammern muss ein Parameter eigegeben werden. Ein Parameter ist in diesem Fall eine Zahl, welche die Distanz beschreibt, die Anton gehen soll.Anton kann sich zudem nach rechts (right) oder links (left) bewegen:right(winkel)left(winkel)In die Klammern muss wieder ein Parameter eigegeben werden, dieses Mal aber ein Winkel in Grad (zum Anfangen am besten mit Werten zwischen 0° und 360° experimentieren!).Führe den untenstehenden Code aus und versuche ihn danach zu manipulieren, indem du die Schildkröte dazu bringst, ein Dreieck zu zeichnen. Versuche danach eine Figur zu zeichnen (Dreieck, Viereck, Fünfeck…), bei der sich die Schildkröte nur rückwärts bewegt.  Wichtig ist, dass bei jedem Befehl spezifiziert wird, dass Anton ihn ausführen muss. Vor jeder Anweisung muss also Anton (unser Objekt) stehen, indem der Name von Anton angegeben wird, gefolgt von einem Punkt und dem zu verwendenden Befehl:  Anton.BefehlSchreiben mit der TurtleAnton kann auch schreiben. Mit dem Befehlwrite(&quot;text&quot;)schreibt Anton den in der Klammer angegebenen Text. Dies tut er immer an der Stelle, wo er sich gerade befindet. Führe das untenstehende Beispiel aus und versuche, den von Anton geschriebenen Text zu verändern. Zum Beispiel mit deinem Namen.Die Position der Turtle und bewegen ohne StiftDas Fenster in dem Anton sich bewegt müssen wir uns wie ein Koordinatensystem vorstellen. Für unsere Zwecke ist das Koordinatensystem von Anton begrenzt auf 400x400 Pixel. Wir können uns das so vorstellen, dass Anton in der Mitte des Fensters startet (bei (x = 0 / y = 0)) und 200 Schrite nach links und 200 Schritte nach rechts gehen kann, so dass vom linken Fensterrand bis zum rechten Fensterrand maximal 400 Schritte möglich sind. Der folgende Code-Ausschnitt versucht das darzustellen. Führe den Code aus und versuche das Koordinatensystem zu verstehen.Im Code Ausschnitt von oben sind einige neue Funktionen ersichtlich. Erstens können wir den Stift von Anton entweder anheben, oder ablegen. Anheben (penup()) heisst, dass Anton gar nichts zeichnen soll, auch wenn er sich bewegt. Ablegen (pendown()) heisst, dass Anton etwas zeichnen soll:penup()pendown()Eine weitere Funktion im obenstehenden Code ist goto(). Mit goto() können wir Anton irgendwohin in unserem Koordinatensystem schicken. In die Klammern müssen wir lediglich die Koordinaten eingeben. Mögliche Koordinaten sind -200 bis 200. X und Y Koordinaten müssen mit einem Komma getrennt werden.goto(x,y)Eine weitere Funktion im obenstehenden Code ist speed(). Damit können wir die Geschwindigkeit von Anton beeinflussen. Die Geschwindigkeit kann Werte zwischen 0 und 10 annehmen. Ein Wert von 1 führt dazu, dass Anton sich sehr langsam bewegt, ein Wert von 10 macht Anton sehr schnell. Achtung: ein Wert von 0 bedeutet, dass Antons Animation ausser Kraft gesetzt wird. Die Turtle bewegt sich dadurch (unter Umständen) noch schneller als mit 10.speed(geschwindigkeit)Weiterhin wurde im Code die Farbe von Anton gewechselt. Die Farbe beeinflusst sowohl die Linien, die Anton zeichnet, als auch den Text, den Anton schreibt. Die Funktion dafür ist color() und als Argument für die Funktion muss eine Farbe eingesetzt werden. Alle gängigen Farben gehen dafür, sie müssen aber auf Englisch und in Anführungszeichen angegeben werden:color(&quot;farbe&quot;)   # zum Beispiel &quot;green&quot;, &quot;blue&quot; oder &quot;red&quot;Die letzte verwendetet Funktion war hideturtle(). Diese Funktion versteckt Anton.hideturtle()Übersicht aller bisher verwendeten FunktionenUm ein Turtle-Programm in Python starten zu können, müssen wir immer folgenden Code-Block ausführen (wir werden ihn später noch verstehen lernen):import turtle             # Turtle Bibliothek von Python importierenwindow = turtle.Screen()  # Fenster initialisieren (nötig)Anton = turtle.Turtle()   # ein neues Objekt generieren: eine Turtle namens AntonAnton.shape(&quot;turtle&quot;)     # Anton soll das Aussehen einer Schildkröte haben.Wichtig ist zudem, vor jede Funktion immer unser Objekt zu platzieren. Unser Objekt heisst Anton. Wir schreiben also immer Anton.funktion(argument) um eine Funktion auszuführen.Bisher verwendete Funktionen (mögliche Argumente in Klammern):forward(distance)   # Distanz als Zahlbackward(distance)  # Distanz als Zahlright(arc)          # arc = Winkel als Zahkleft(arc)           # arc = Winkel als Zahlwrite(&quot;text&quot;)       # Text in Anführungszeichen!penup()             # kein Argument!pendown()           # kein Argument!goto(x,y)           # x- und y-Koordinaten als Zahlen, getrennt mit Komma.speed(value)        # Wert zwischen 0 und 10color(&quot;farbe&quot;)   # zum Beispiel &quot;green&quot;, &quot;blue&quot; oder &quot;red&quot;hideturtle()        # kein Argument!All diese Funktionen können in den Übung 1 angewendet werden. Hier klicken, um zur Übung 1 zu kommen.",
+    "url": "http://localhost:4000/docs/50%20python-mit-turtle/1_zeichen/",
+    "relUrl": "/docs/50%20python-mit-turtle/1_zeichen/"
+  },
+  "2": {
+    "id": "2",
+    "title": "2 - Kreise zeichnen",
+    "content": "Achtung: auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. Lerne, wie du dich dagegen schützen kannst.Kreise zeichnenWenn sich Anton bewegt, dann zeichnet er eine Linie. Diese Linie können wir aber auch noch manipulieren, indem wir z.B. die Breite oder die Farbe der Linie verändern:Farben",
+    "url": "http://localhost:4000/spottundhohn/docs/50%20python-mit-turtle/2_kreise/",
+    "relUrl": "/spottundhohn/docs/50%20python-mit-turtle/2_kreise/"
+  },
+  "3": {
+    "id": "3",
+    "title": "Übungen 1",
+    "content": "Übungen 1Übung 1Übung 2Übung 3Übung 4",
+    "url": "http://localhost:4000/docs/50%20python-mit-turtle/2_uebungen1/",
+    "relUrl": "/docs/50%20python-mit-turtle/2_uebungen1/"
+  },
+  "4": {
+    "id": "4",
+    "title": "Kreise zeichnen",
+    "content": "Achtung: auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. Lerne, wie du dich dagegen schützen kannst.Kreise zeichnenWenn sich Anton bewegt, dann zeichnet er eine Linie. Diese Linie können wir aber auch noch manipulieren, indem wir z.B. die Breite oder die Farbe der Linie verändern:Farben",
+    "url": "http://localhost:4000/docs/50%20python-mit-turtle/3_kreise/",
+    "relUrl": "/docs/50%20python-mit-turtle/3_kreise/"
+  },
+  "5": {
+    "id": "5",
+    "title": "",
+    "content": "  404  Page not found :(  The requested page could not be found.",
+    "url": "http://localhost:4000/404/",
+    "relUrl": "/404/"
+  },
+  "6": {
+    "id": "6",
+    "title": "",
+    "content": "  404  Page not found :(  The requested page could not be found.",
+    "url": "http://localhost:4000/spottundhohn/404/",
+    "relUrl": "/spottundhohn/404/"
+  },
+  "7": {
+    "id": "7",
+    "title": "Lösungen",
+    "content": "Übungen 1Übung 1Übung 2Übung 3Übung 4",
+    "url": "http://localhost:4000/docs/50%20python-mit-turtle/4_uebungen2/",
+    "relUrl": "/docs/50%20python-mit-turtle/4_uebungen2/"
+  },
+  "8": {
+    "id": "8",
+    "title": "Credits",
+    "content": "Credits and LicenceCreditsMost contents of this site do not come from me and this site is merely a  collection of extraordinary content from great authors all over the web. Thank you for making your content freely accessible. I try to credit authors directly in documents, where their content is used. Nevertheless I want to thank a few people explicitly, because they may have provided content or just because they have been an inspiration for me (and they might be as well for the reader of this):  Stefan  Hans  Albrecht  TrudeLayoutThe layout of this site is based on the free and open-source Jekyll-Theme Just The Docs. You can see Just The Docs in its original form here.LicenceEverything on this Website that is not credited to an author is open. If credited, the respective authors licence applies. If you use any open content from this site, feel free to do so. But please, if you develop/advance/improve the content used, let me know, because I might be interested in updating my content based on what you did.",
+    "url": "http://localhost:4000/spottundhohn/docs/credits/",
+    "relUrl": "/spottundhohn/docs/credits/"
+  },
+  "9": {
+    "id": "9",
+    "title": "Dossiers Grundlagen",
+    "content": "Dossiers zu GrundlagenthemenDie Grundlagendossiers geben zu ganz unterschiedlichen Themen eine kurze Einführung mit Theorie und Beispielen. Dossiersdienen zudem auch als Dokumentation, auf die jederzeit zugegriffen werden kann.Übersicht über alle Dossiers                                                                                                                            Wie schreibt man ein E-Mail?                                        ",
+    "url": "http://localhost:4000/docs/dossiers-grundlagen",
+    "relUrl": "/docs/dossiers-grundlagen"
+  },
+  "10": {
+    "id": "10",
+    "title": "Wie schreibt man ein E-Mail?",
+    "content": "Wie schreibt man ein E-Mail?Dies ist ein DossierDies ist Text.Dies ist auch Text.",
+    "url": "http://localhost:4000/docs/dossiers-grundlagen/email",
+    "relUrl": "/docs/dossiers-grundlagen/email"
+  },
+  "11": {
+    "id": "11",
+    "title": "Home",
+    "content": "Companion website zu einer Einführung in Python mit der TurtleDiese Webseite gibt eine Einführung in das Programmieren mit der Python Turtle. Dies wird exemplarisch anhand von trinket.io gemacht, einem Browser-basierten Tool, dass sich zum Einbetten, Teilen und Lehren von Code eignet.SeitenübersichtMuristaldenWalt DisneyÜbersichtHallo Velo",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },
+  "12": {
+    "id": "12",
+    "title": "Home",
+    "content": "Ressourcen zu Informatik, Digitalisierung und Computer-WissenschaftenDiese Seite sammelt Informationen und Anleitungen rund um die Themen der Informatik, Digitalisierung und Computer-Wissenschaften. Die Seite dient als Lern-Ressource für Schüler des Campus Muristalden, steht aber allen Interessierten offen. Für die Weiterverwendung der Materialien siehe Credits.SeitenübersichtMuristaldenMuristalden HackerspaceÜbersicht",
+    "url": "http://localhost:4000/spottundhohn/",
+    "relUrl": "/spottundhohn/"
+  },
+  "13": {
+    "id": "13",
+    "title": "Das Koordinatensystem der Turtle",
+    "content": "Koordinaten",
+    "url": "http://localhost:4000/spottundhohn/docs/50%20python-mit-turtle/koordinaten/",
+    "relUrl": "/spottundhohn/docs/50%20python-mit-turtle/koordinaten/"
+  },
+  "14": {
+    "id": "14",
+    "title": "Programmieren mit Jython",
+    "content": "Programmieren mit JythonContent coming soon.// Javascript code with syntax highlighting.var fun = function lang(l) {  dateformat.i18n = require('./lang/' + l)  return true;}# Ruby code with syntax highlightingGitHubPages::Dependencies.gems.each do |gem, version|  s.add_dependency(gem, &quot;= #{version}&quot;)end# Python code with syntax highlighting.def my_function():  print(&quot;Hello from a function&quot;)my_function()&amp;lt;!-- HTML code with syntax highlighting --&amp;gt;&amp;lt;body&amp;gt;&amp;lt;div class=&quot;1a&quot;&amp;gt;&amp;lt;p&amp;gt; This is context &amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/body&amp;gt;",
+    "url": "http://localhost:4000/docs/programmieren-mit-jython",
+    "relUrl": "/docs/programmieren-mit-jython"
+  },
+  "15": {
+    "id": "15",
+    "title": "Programmieren mit Pygame",
+    "content": "Programmieren mit PygameComing soon.",
+    "url": "http://localhost:4000/docs/pygame",
+    "relUrl": "/docs/pygame"
+  },
+  "16": {
+    "id": "16",
+    "title": "Programmieren mit der Turtle",
+    "content": "Python mit der TurtleProgrammieren lernen mit einer Turtle hat lange Tradition. Es geht dabei darum, eine Schildkröte mit Hilfe von Programmier-Anweisungen zu bewegen. Untenstehend befindet sich ein Fenster mit einer Schildkröte und einigen Programmieranweisungen. Finde dich im Fenster zurecht und Versuche den Code auszuführen. Wenn das geklappt hat, versuche den Code zu verändern, so, dass die Turtle etwas anderes macht.Die im obenstehenden Beispiel verwendete und vorgestellte Programmiersprache heisst Python. Es gibt unzählige verschiedene Programmiersprachen, Python ist aber sehr verbreitet und verhältnismässig einfach, weshalb sich Python sehr gut als Einstieg in die Welt des Programmierens eignet. Die folgenden Übungen führen in das Programmieren mit der Python-Turtle ein. Untenstehend ist eine Übersicht aller Lektionen, es empfiehlt sich, der Reihe nach durchzugehen.Übersicht über alle Lektionen zum Programmieren in Python mit der Turtle                                                                      Einfaches zeichnen                              1 - einfaches zeichnen                        2 - Kreise zeichnen                        Übungen 1                        Das Koordinatensystem der Turtle                        Kreise zeichnen                        Lösungen                                                    ",
+    "url": "http://localhost:4000/docs/programmieren-mit-turtle",
+    "relUrl": "/docs/programmieren-mit-turtle"
+  },
+  "17": {
+    "id": "17",
+    "title": "Programmieren mit der Turtle",
+    "content": "Python mit der TurtleProgrammieren lernen mit einer Turtle hat lange Tradition. Es geht dabei darum, eine Schildkröte mit Hilfe von Programmier-Anweisungen zu bewegen. Untenstehend befindet sich ein Fenster mit einer Schildkröte und einigen Programmieranweisungen. Finde dich im Fenster zurecht und Versuche den Code auszuführen. Wenn das geklappt hat, versuche den Code zu verändern, so, dass die Turtle etwas anderes macht.Die im obenstehenden Beispiel verwendete und vorgestellte Programmiersprache heisst Python. Es gibt unzählige verschiedene Programmiersprachen, Python ist aber sehr verbreitet und verhältnismässig einfach, weshalb sich Python sehr gut als Einstieg in die Welt des Programmierens eignet. Die folgenden Übungen führen in das Programmieren mit der Python-Turtle ein. Untenstehend ist eine Übersicht aller Lektionen, es empfiehlt sich, der Reihe nach durchzugehen.Übersicht über alle Lektionen zum Programmieren in Python mit der Turtle                                                                      Einfaches zeichnen                              1 - einfaches zeichnen                        2 - Kreise zeichnen                        Übungen 1                        Das Koordinatensystem der Turtle                        Kreise zeichnen                        Lösungen                                                    ",
+    "url": "http://localhost:4000/docs/programmieren-mit-turtle",
+    "relUrl": "/docs/programmieren-mit-turtle"
+  }
+}
