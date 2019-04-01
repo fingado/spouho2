@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Einfaches zeichnen - Spott und Hohn</title>
+  <title>Einfaches zeichnen - Turtle</title>
   <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
@@ -20,7 +20,7 @@
 
   <div class="page-wrap">
     <div class="side-bar">
-      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">Spott und Hohn</a>
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">Turtle</a>
       <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
         <nav>
@@ -75,6 +75,16 @@
                   
                 
                   
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/50%20python-mit-turtle/0_anleitung/" class="navigation-list-link">Einführung Trinket</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item  active">
                       
                       <a href="http://localhost:4000/docs/50%20python-mit-turtle/1_zeichen/" class="navigation-list-link active">Einfaches zeichnen</a>
@@ -83,19 +93,9 @@
                   
                 
                   
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/50%20python-mit-turtle/2_uebungen1/" class="navigation-list-link">Übungen 1</a>
-                      
-                    </li>
-                  
-                
-                  
-                    <li class="navigation-list-item ">
-                      
-                      <a href="http://localhost:4000/docs/50%20python-mit-turtle/4_uebungen2/" class="navigation-list-link">Lösungen</a>
                       
                     </li>
                   
@@ -130,7 +130,7 @@
           
           <div class="search js-search">
             <div class="search-input-wrap">
-              <input type="text" class="js-search-input search-input" placeholder="Search Spott und Hohn" aria-label="Search Spott und Hohn" autocomplete="off">
+              <input type="text" class="js-search-input search-input" placeholder="Search Turtle" aria-label="Search Turtle" autocomplete="off">
               <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
             </div>
             <div class="js-search-results search-results-wrap"></div>
@@ -161,7 +161,7 @@
         
         <div class="page-content">
           <div class="text-red-000">
-<em><font size="1"><b>Achtung:</b> auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. <a href="https://www.waltdisney.ch"><b>Lerne, wie du dich dagegen schützen kannst.</b></a></font></em>
+<em><font size="1"><b>Achtung:</b> auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. <a href="http://www.waltdisney.ch"><b>Lerne, wie du dich dagegen schützen kannst.</b></a></font></em>
 </div>
 <hr />
 <h1 id="zeichnen-mit-der-turtle">Zeichnen mit der Turtle</h1>
@@ -266,14 +266,14 @@
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>   <span class="c"># Distanz als Zahl</span>
 <span class="n">backward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>  <span class="c"># Distanz als Zahl</span>
-<span class="n">right</span><span class="p">(</span><span class="n">arc</span><span class="p">)</span>          <span class="c"># arc = Winkel als Zahk</span>
+<span class="n">right</span><span class="p">(</span><span class="n">arc</span><span class="p">)</span>          <span class="c"># arc = Winkel als Zahl</span>
 <span class="n">left</span><span class="p">(</span><span class="n">arc</span><span class="p">)</span>           <span class="c"># arc = Winkel als Zahl</span>
 <span class="n">write</span><span class="p">(</span><span class="s">"text"</span><span class="p">)</span>       <span class="c"># Text in Anführungszeichen!</span>
 <span class="n">penup</span><span class="p">()</span>             <span class="c"># kein Argument!</span>
 <span class="n">pendown</span><span class="p">()</span>           <span class="c"># kein Argument!</span>
 <span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>           <span class="c"># x- und y-Koordinaten als Zahlen, getrennt mit Komma.</span>
 <span class="n">speed</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>        <span class="c"># Wert zwischen 0 und 10</span>
-<span class="n">color</span><span class="p">(</span><span class="s">"farbe"</span><span class="p">)</span>   <span class="c"># zum Beispiel "green", "blue" oder "red"</span>
+<span class="n">color</span><span class="p">(</span><span class="s">"farbe"</span><span class="p">)</span>      <span class="c"># zum Beispiel "green", "blue" oder "red"</span>
 <span class="n">hideturtle</span><span class="p">()</span>        <span class="c"># kein Argument!</span>
 </code></pre></div></div>
 

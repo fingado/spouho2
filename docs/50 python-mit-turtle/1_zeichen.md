@@ -2,10 +2,10 @@
 layout: default
 title: Einfaches zeichnen
 parent: Programmieren mit der Turtle
-nav_order: 1
+nav_order: 2
 ---
 <div class="text-red-000">
-<em><font size="1"><b>Achtung:</b> auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. <a href="https://www.waltdisney.ch"><b>Lerne, wie du dich dagegen schützen kannst.</b></a></font></em>
+<em><font size="1"><b>Achtung:</b> auf dieser Seite befinden sich eingebettete Plugins von trinket.io zum direkten Anwenden von Programmiercode im Browser. Das ist ziemlich praktisch um das Programmieren zu erlernen, aber leider zeichnet trinket.io dein Surfverhalten auf und gibt diese Informationen unter Umständen an Dritte weiter. <a href="http://www.waltdisney.ch"><b>Lerne, wie du dich dagegen schützen kannst.</b></a></font></em>
 </div>
 ---
 # Zeichnen mit der Turtle
@@ -125,14 +125,14 @@ Bisher verwendete Funktionen (mögliche Argumente in Klammern):
 ```python
 forward(distance)   # Distanz als Zahl
 backward(distance)  # Distanz als Zahl
-right(arc)          # arc = Winkel als Zahk
+right(arc)          # arc = Winkel als Zahl
 left(arc)           # arc = Winkel als Zahl
 write("text")       # Text in Anführungszeichen!
 penup()             # kein Argument!
 pendown()           # kein Argument!
 goto(x,y)           # x- und y-Koordinaten als Zahlen, getrennt mit Komma.
 speed(value)        # Wert zwischen 0 und 10
-color("farbe")   # zum Beispiel "green", "blue" oder "red"
+color("farbe")      # zum Beispiel "green", "blue" oder "red"
 hideturtle()        # kein Argument!
 ```
 
